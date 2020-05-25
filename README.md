@@ -13,17 +13,14 @@ Project Team Members:
 
 (10 points) 
 
-For the project proposal, please write a short abstact addressing the questions below. You need to replace the entire contents of this section with one to two paragraphs addressing the following:
+Our generative art project is a computationally-generated inspired work of Andy Warhol's Shot Marilyns (1964). Andy Warhol's Shot Marilyns is a collection of multiple Marilyn Monroes. They are all the exact same images of Marilyn Monroe except that each one has a different color filter. Instead of creating each of the different color filters through hand, we will be using the algorithm of style transfer. Style transfer is a concept introduced in 2015. The data we will need will be the subject we will eventually choose and other artworks with the styles we want to base the subject off. After running the algorithm multiple times with different style sources, we should be able to replicate something similar to Shot Marilyns. Since it's a digital generated work, we are fine with it just being presentable through digital means. There is the fear that this algorithm will be very difficult to understand, but there are many resources online so we hope we will be able to manage it.
 
-- What is your concept for a generative art project? 
-- What methods/networks/techniques will you employ (include links to technical precedents/code bases)
-- What training data (if any) will you use for your project? 
-- What kind of results do you hope that your system will produce?
-- How will you present your result/what form will your output take?
-- What if any challenges to you think may arise as you are working with this?
-- How are you expanding on topics we have covered in class? 
-- Why is it interesting? (personally, culturally, politically, other)
-- List three papers / art projects that are references for this work.
+Style transfer is a concept introduced in class. We are expanding it by using it to replicate a popular pop art. We want to do this because we want to see if we can recreate modern art with modern technology.
+
+References:
+Shot Marilyns (1964) https://en.wikipedia.org/wiki/Shot_Marilyns
+Original style transfer paper (2015) https://arxiv.org/abs/1508.06576
+A tutorial on how to style transfer https://www.pyimagesearch.com/2018/08/27/neural-style-transfer-with-opencv/
 
 ## Data and Model
 
