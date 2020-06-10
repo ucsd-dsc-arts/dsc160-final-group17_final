@@ -39,6 +39,8 @@ Frozen reference: https://m.media-amazon.com/images/M/MV5BYTk2MzNmZDAtODg5NC00OG
 
 Grand Budapest Hotel reference: https://m.media-amazon.com/images/M/MV5BN2M0ODJjZTgtYWNhYi00OTc3LWJiZWQtOWRjMWQyMzk3MDRkXkEyXkFqcGdeQXVyMjMzMDI4MjQ@._V1_SY1000_CR0,0,1330,1000_AL_.jpg
 
+The referenced styles are screenshots of the respected movies from IMDb.com.
+
 For the Marilyn part, we did both Tensorflow Hub's fast style transfer and also building a VGG19 from scratch. The Tensorflow Hub fast style transfer produced more aesthetically pleasing images and they were done within a second. The VGG19 model requires a lot of time to train. Our sequence of training epochs 1-10 was from the VGG19 model. The Spiderverse-styled Marilyn took 44 minutes to train from the VGG19 model. Due to the training time, we only did it on the Spiderverse style and the final Marilyn products were compiled with fast style transfer products.
 
 Getty image sources
@@ -52,6 +54,10 @@ In the final submission, this section will describe both the data you use for th
 ## Code
 
 (20 points)
+
+Code: https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/code/4%20Marilyns.ipynb
+
+Will need tensorflow installed.
 
 This section will link to the various code for your project (stored within this repository). Your code should be executable on datahub, should we choose to replicate your result. This includes code for: 
 
