@@ -59,6 +59,8 @@ Code: https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/co
 
 Will need tensorflow installed.
 
+For the Marilyn section, we load the subject and styled images then input them into Tensorflow's fast style transfer to receive our transferred results. We also built a VGG19 model from scratch, and trained on the Spiderverse style. We also print out the output for every training epoch.
+
 This section will link to the various code for your project (stored within this repository). Your code should be executable on datahub, should we choose to replicate your result. This includes code for: 
 
 - code for data acquisition/scraping
