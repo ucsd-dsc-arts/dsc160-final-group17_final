@@ -12,7 +12,7 @@ Project Team Members:
 
 (10 points) 
 
-Our generative art project is a computationally-generated inspired work of Andy Warhol's Shot Marilyns (1964). Andy Warhol's Shot Marilyns is a collection of multiple Marilyn Monroes. They are all the exact same images of Marilyn Monroe except that each one has a different color filter. Instead of creating each of the different color filters through hand, we will be using the algorithm of style transfer. Style transfer is a concept introduced in 2015. The data we will need will be the subject we will eventually choose and other artworks with the styles we want to base the subject off. After running the algorithm multiple times with different style sources, we should be able to replicate something similar to Shot Marilyns. Since it's a digital generated work, we are fine with it just being presentable through digital means. There is the fear that this algorithm will be very difficult to understand, but there are many resources online so we hope we will be able to manage it.
+The first part of our generative art project is a computationally-generated inspired work of Andy Warhol's Shot Marilyns (1964). Andy Warhol's Shot Marilyns is a collection of multiple Marilyn Monroes. They are all the exact same images of Marilyn Monroe except that each one has a different color filter. Instead of creating each of the different color filters through hand, we will be using the algorithm of style transfer. Style transfer is a concept introduced in 2015. The data we will need will be the subject we will eventually choose and other artworks with the styles we want to base the subject off. After running the algorithm multiple times with different style sources, we should be able to replicate something similar to Shot Marilyns. Since it's a digital generated work, we are fine with it just being presentable through digital means. There is the fear that this algorithm will be very difficult to understand, but there are many resources online so we hope we will be able to manage it.
 
 Style transfer is a concept introduced in class. We are expanding it by using it to replicate a popular pop art. We want to do this because we want to see if we can recreate modern art with modern technology.
 
@@ -23,7 +23,21 @@ Style transfer is a concept introduced in class. We are expanding it by using it
 
 Description of Style Transfer Neural Net
 
+https://www.tensorflow.org/tutorials/generative/style_transfer#build_the_model
+
 Marilyn image source
+
+Original Marilyn: https://www.moma.org/learn/moma_learning/_assets/www.moma.org/wp/moma_learning/wp-content/uploads/2012/07/Marilyn-PhotoPortrait-332x395.jpg
+
+Spiderverse reference: https://m.media-amazon.com/images/M/MV5BMTU4NjYwNzAxN15BMl5BanBnXkFtZTgwMDkyODI4NjM@._V1_SX1777_CR0,0,1777,744_AL_.jpg
+
+Matrix reference: https://m.media-amazon.com/images/M/MV5BMGM1NTk4YjMtNWNkNi00MzY3LWI3OTUtNTdmZGI3NmU2MGI0XkEyXkFqcGdeQXVyOTY2MDM3MjM@._V1_SX1777_CR0,0,1777,728_AL_.jpg
+
+Frozen reference: https://m.media-amazon.com/images/M/MV5BYTk2MzNmZDAtODg5NC00OGYwLWE5MGMtNzc2NTM4ODQzYWZiXkEyXkFqcGdeQXVyNjQ4ODE4MzQ@._V1_SX1777_CR0,0,1777,740_AL_.jpg
+
+Grand Budapest Hotel reference: https://m.media-amazon.com/images/M/MV5BN2M0ODJjZTgtYWNhYi00OTc3LWJiZWQtOWRjMWQyMzk3MDRkXkEyXkFqcGdeQXVyMjMzMDI4MjQ@._V1_SY1000_CR0,0,1330,1000_AL_.jpg
+
+For the Marilyn part, we did both Tensorflow Hub's fast style transfer and also building a VGG19 from scratch. The Tensorflow Hub fast style transfer produced more aesthetically pleasing images and they were done in a second. The VGG19 model requires a lot of time to train. Our sequence of training epochs 1-10 are from the VGG19 model. The Spiderverse-styled Marilyn took 44 minutes to train from the VGG19 model. Due to the training time, we only did it on the Spiderverse style and the final Marilyn products were compiled with fast style transfer products.
 
 Getty image sources
 
