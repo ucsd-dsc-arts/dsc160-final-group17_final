@@ -41,7 +41,7 @@ Grand Budapest Hotel reference: https://m.media-amazon.com/images/M/MV5BN2M0ODJj
 
 The referenced styles are screenshots of the respected movies from IMDb.com.
 
-For the Marilyn part, we did both Tensorflow Hub's fast style transfer and also building a VGG19 from scratch. The Tensorflow Hub fast style transfer produced more aesthetically pleasing images and they were done within a second. The VGG19 model requires a lot of time to train. Our sequence of training epochs 1-10 was from the VGG19 model. The Spiderverse-styled Marilyn took 44 minutes to train from the VGG19 model. Due to the training time, we only did it on the Spiderverse style and the final Marilyn products were compiled with fast style transfer products.
+For the Marilyn part, we did both Tensorflow Hub's fast style transfer and also building a VGG19 from scratch. Our sequence of training epochs 1-10 was from the VGG19 model. The Spiderverse-styled Marilyn took 44 minutes to train from the VGG19 model. Due to the training time, we only did it on the Spiderverse style and the final Marilyn products were compiled with fast style transfer products.
 
 Getty image sources
 
@@ -75,16 +75,22 @@ Link each of these items to your .ipynb or .py files within this seection, and p
 ### Marilyn
 
 Marilyn original
+
 ![alt text](https://www.moma.org/learn/moma_learning/_assets/www.moma.org/wp/moma_learning/wp-content/uploads/2012/07/Marilyn-PhotoPortrait-332x395.jpg)
 
 The referenced styles (Spiderverse, Matrix, Frozen, Grand Budapest Hotel)
+
 ![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/Marilyn%20Referenced%20Styles.png?raw=true)
 
 Final transferred result
+
 ![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/Marilyn%20Final.png?raw=true)
 
 Training epoch steps 1-10 for our custom model
+
 ![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/Marilyn%20Training%20Epochs.png?raw=true)
+
+Using the referenced styles of various movies, we transferred the styles of them to the original image of Marilyn using Tensorflow's fast style transfer. The 10-step training sequence is using the VGG19 model on the style of Spiderverse.
 
 
 This section should summarize your results and will embed links to documentation to significant outputs. This should document both process and show artistic results. This can include figures, sound files, videos, bitmaps, as appropriate to your generative art idea. Each result should include a brief textual description, and all should be listed below: 
@@ -97,6 +103,12 @@ This section should summarize your results and will embed links to documentation
 
 (30 points, three to five paragraphs)
 
+Since we had two semi-independent projects under the same general idea of style transfer, we have two sets of results. The first set is the results of applying various styles to the image of Marilyn Monroe, similar to Andy Warhol's Pop Art. We were able to find four stylistically different films and successfully apply their style to our image of Marilyn, resulting in a new version of Andy Warhol's Shot Marilyns. Our second set of results is from the Getty Images Challenge, where we applied the style of a painting to a real-life recreation of the painting. We found much success with certain items, but some had troubling results due to a few factors. Overall, we were very happy with both results, as we were able to replicate both of our inspirations and push them further than their original interpretation.
+
+For the Marilyn part, the Tensorflow Hub fast style transfer produced more aesthetically pleasing images and they were done within a second. The VGG19 model requires a lot more time to train. Our sequence of training epochs 1-10 was from the VGG19 model. The Spiderverse-styled Marilyn took 44 minutes to train from the VGG19 model. Due to the training time, we only did it on the Spiderverse style and the final Marilyn products were compiled with fast style transfer products. According the Tensorflow's article, the VGG19 model is the very original style transfer model. There are lots of artifacts produced from it even from the long transfer time.
+
+The Marilyn part is culturally innovative because we are re-creating modern art with modern technology. Instead of spending days creating artworks of different styles, we can create such in a matter of minutes. One far-off possibility of expansion for this project is we can print out our output in physical form. A new model can then be trained to create the physical textures of the different styled artworks.
+
 The first paragraph should be a short summary describing your results.
 
 The subsequent paragraphs could address questions including:
@@ -106,17 +118,19 @@ The subsequent paragraphs could address questions including:
 - What are the ethical concerns for this form of generative art? 
 - In what future directions could you expand this work?
 
-Since we had two semi-independent projects under the same general idea of style transfer, we have two sets of results. The first set is the results of applying various styles to the image of Marilyn Monroe, similar to Andy Warhol's Pop Art. We were able to find four stylistically different films and successfully apply their style to our image of Marilyn, resulting in a new version of Andy Warhol's Shot Marilyns. Our second set of results is from the Getty Images Challenge, where we applied the style of a painting to a real-life recreation of the painting. We found much success with certain items, but some had troubling results due to a few factors. Overall, we were very happy with both results, as we were able to replicate both of our inspirations and push them further than their original interpretation.
-
-
 ## Team Roles
 
 Cameron Brody: Project idea creation, writing
+
 Brian Cheng: Project idea creation, creation of Marilyn modeling network, writing
+
 Richard Duong: Project idea creation, writing
+
 Thomas Evans-Barton: Project idea creation, creation of Getty modeling network, writing
 
 ## Technical Notes and Dependencies
+
+The code will require Tensorflow to be installed.
 
 Any implementation details or notes we need to repeat your work. 
 - Additional libraries you are using for this project
@@ -126,5 +140,7 @@ Any implementation details or notes we need to repeat your work.
 ## Reference
 
 Shot Marilyns (1964) https://en.wikipedia.org/wiki/Shot_Marilyns
+
 Original style transfer paper (2015) https://arxiv.org/abs/1508.06576
+
 A tutorial on how to style transfer https://www.pyimagesearch.com/2018/08/27/neural-style-transfer-with-opencv/
