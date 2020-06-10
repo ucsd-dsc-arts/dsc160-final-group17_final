@@ -41,7 +41,7 @@ Grand Budapest Hotel reference: https://m.media-amazon.com/images/M/MV5BN2M0ODJj
 
 The referenced styles are screenshots of the respected movies from IMDb.com.
 
-For the Marilyn part, we did both Tensorflow Hub's fast style transfer and also building a VGG19 from scratch. Our sequence of training epochs 1-10 was from the VGG19 model. The Spiderverse-styled Marilyn took 44 minutes to train from the VGG19 model. Due to the training time, we only did it on the Spiderverse style and the final Marilyn products were compiled with fast style transfer products.
+For the Marilyn part, we did both Tensorflow Hub's fast style transfer and also building a VGG19 from scratch. Our sequence of training epochs 1-10 was from the VGG19 model while the final output is from Tensorflow's fast style transfer.
 
 Getty image sources
 
