@@ -3,11 +3,10 @@
 DSC160 Data Science and the Arts - Final Project - Generative Arts - Spring 2020
 
 Project Team Members: 
-- Firstname Lastname1, name1@ucsd.edu
-- Firstname Lastname2, name2@ucsd.edu
-- Firstname Lastname3, name3@ucsd.edu
-- Firstname Lastname4, name4@ucsd.edu
-- Firstname Lastname5, name5@ucsd.edu
+- Cameron Brody, crbrody@ucsd.edu
+- Brian Cheng, brc042@ucsd.edu
+- Richard Duong, r3duong@ucsd.edu
+- Thomas Evans-Barton, tevansba@ucsd.edu
 
 ## Abstract
 
@@ -17,14 +16,16 @@ Our generative art project is a computationally-generated inspired work of Andy 
 
 Style transfer is a concept introduced in class. We are expanding it by using it to replicate a popular pop art. We want to do this because we want to see if we can recreate modern art with modern technology.
 
-References:
-Shot Marilyns (1964) https://en.wikipedia.org/wiki/Shot_Marilyns
-Original style transfer paper (2015) https://arxiv.org/abs/1508.06576
-A tutorial on how to style transfer https://www.pyimagesearch.com/2018/08/27/neural-style-transfer-with-opencv/
 
 ## Data and Model
 
 (10 points) 
+
+Description of Style Transfer Neural Net
+
+Marilyn image source
+
+Getty image sources
 
 In the final submission, this section will describe both the data you use for this project and any pre-existing models/neural nets. For each you should provide the name, a textual description, and a link. If there is a paper (for neural net) link that as well.
 - Such and such Neural Net. The short description of this neural net. 
@@ -68,9 +69,15 @@ The subsequent paragraphs could address questions including:
 - What are the ethical concerns for this form of generative art? 
 - In what future directions could you expand this work?
 
+Since we had two semi-independent projects under the same general idea of style transfer, we have two sets of results. The first set is the results of applying various styles to the image of Marilyn Monroe, similar to Andy Warhol's Pop Art. We were able to find four stylistically different films and successfully apply their style to our image of Marilyn, resulting in a new version of Andy Warhol's Shot Marilyns. Our second set of results is from the Getty Images Challenge, where we applied the style of a painting to a real-life recreation of the painting. We found much success with certain items, but some had troubling results due to a few factors. Overall, we were very happy with both results, as we were able to replicate both of our inspirations and push them further than their original interpretation.
+
+
 ## Team Roles
 
-Provide an account of individual members and their efforts/contributions to the specific tasks you accomplished.
+Cameron Brody: Project idea creation, writing
+Brian Cheng: Project idea creation, creation of Marilyn modeling network, writing
+Richard Duong: Project idea creation, writing
+Thomas Evans-Barton: Project idea creation, creation of Getty modeling network, writing
 
 ## Technical Notes and Dependencies
 
@@ -81,7 +88,6 @@ Any implementation details or notes we need to repeat your work.
 
 ## Reference
 
-All references to papers, techniques, previous work, repositories you used should be collected at the bottom:
-- Papers
-- Repositories
-- Blog posts
+Shot Marilyns (1964) https://en.wikipedia.org/wiki/Shot_Marilyns
+Original style transfer paper (2015) https://arxiv.org/abs/1508.06576
+A tutorial on how to style transfer https://www.pyimagesearch.com/2018/08/27/neural-style-transfer-with-opencv/
