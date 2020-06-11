@@ -14,7 +14,7 @@ Project Team Members:
 
 The first part of our generative art project is a computationally-generated inspired work of Andy Warhol's Shot Marilyns (1964). Andy Warhol's Shot Marilyns is a collection of multiple Marilyn Monroes. They are all the exact same images of Marilyn Monroe except that each one has a different color filter. Instead of creating each of the different color filters through hand, we will be using the algorithm of style transfer. Style transfer is a concept introduced in 2015. The data we will need will be the subject we will eventually choose and other artworks with the styles we want to base the subject off. After running the algorithm multiple times with different style sources, we should be able to replicate something similar to Shot Marilyns. Since it's a digital generated work, we are fine with it just being presentable through digital means. There is the fear that this algorithm will be very difficult to understand, but there are many resources online so we hope we will be able to manage it.
 
-The second part of our project is
+The second part of our project is to use style transfer in a different way, namely to take the style of a painting, and transfer it on to a real world recreation of that painting. Recently, there has been a very popular challenge going around known as the 'Getty Image Challenge', in which people attempt to recreate famous works of art using whatever household items are available to them. What we wanted to do was take each of those recreations, and make them look even more like their historical counterparts, and in doing so see what types of paintings/recreations tended to style transfer over well, and which did not.
 
 Style transfer is a concept introduced in class. We are expanding it by using it to replicate a popular pop art. We want to do this because we want to see if we can recreate modern art with modern technology.
 
@@ -43,7 +43,12 @@ The referenced styles are screenshots of the respected movies from IMDb.com.
 
 For the Marilyn part, we did both Tensorflow Hub's fast style transfer and also building a VGG19 from scratch. Our sequence of training epochs 1-10 was from the VGG19 model while the final output is from Tensorflow's fast style transfer.
 
-Getty image sources
+Getty image sources:
+
+All images:
+https://blogs.getty.edu/iris/getty-artworks-recreated-with-household-items-by-creative-geniuses-the-world-over/
+
+For the Getty Images Challenge, we used the same methodology as above.
 
 In the final submission, this section will describe both the data you use for this project and any pre-existing models/neural nets. For each you should provide the name, a textual description, and a link. If there is a paper (for neural net) link that as well.
 - Such and such Neural Net. The short description of this neural net. 
@@ -94,6 +99,55 @@ Training epoch steps 1-10 for our custom model
 
 Using the referenced styles of various movies, we transferred the styles of them to the original image of Marilyn using Tensorflow's fast style transfer. The 10-step training sequence is using the VGG19 model on the style of Spiderverse.
 
+### Getty Image Challenge
+
+The Laughing Fool original:
+
+![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/image1_a.png)
+
+The Laughing Fool recreation:
+
+![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/image1_b.png)
+
+The Laughing Fool combination:
+
+![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/combined_1.png)
+
+The Astronomer original:
+
+![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/image2_a.png)
+
+The Astronomer recreation:
+
+![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/image2_b.png)
+
+The Astronomer combination:
+
+![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/combined_2.png)
+
+Self-Portrait, Yawning original:
+
+![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/image3_a.png)
+
+Self-Portrait, Yawning recreation:
+
+![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/image3_b.png)
+
+Self-Portrait, Yawning combination:
+
+![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/combined_3.png)
+
+Male Harp Player of the Early Spedos Type original:
+
+![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/image4_a.png)
+
+Male Harp Player of the Early Spedos Type recreation:
+
+![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/image4_b.png)
+
+Male Harp Player of the Early Spedos Type combination:
+
+![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/combined_4.png)
 
 This section should summarize your results and will embed links to documentation to significant outputs. This should document both process and show artistic results. This can include figures, sound files, videos, bitmaps, as appropriate to your generative art idea. Each result should include a brief textual description, and all should be listed below: 
 
@@ -111,7 +165,9 @@ For the Marilyn part, the Tensorflow Hub fast style transfer produced more aesth
 
 The Marilyn part is culturally innovative because we are re-creating modern art with modern technology. Instead of spending days creating artworks of different styles, we can create such in a matter of minutes. One far-off possibility of expansion for this project is we can print out our output in physical form. A new model can then be trained to create the physical textures of the different styled artworks.
 
-The first paragraph should be a short summary describing your results.
+For the Getty Image Challenge, for the most part, the combinations of the recreations and their original paintings turned out quite well! We had exceptional success in recreations for both The Laughing Fool by Jacob Cornelisz van Oostsanen, as well as The Astronomer by Johannes Vermeer. Self-Portrait, Yawning by Joseph Ducreux was not as good of a combination, possibly due to the shadows in the background of the recreation; it seems that the style transfer was slightly unsure of what to do with these patches, and made them very light in comparison to their original shade. Additionally, on the final instance, we attempted to style transfer a picture of the statue that the individual was trying to recreate, to see how a more physical medium might be style transferred over. This was very experimental, and unfortunately did not quite work, but it was still an interesting thing to try.
+
+Ultimately, generative art in these two manners were both very successful in their own ways, and show the incredible potential that style transfer has to create great and hitherto unimagined art in the future.
 
 The subsequent paragraphs could address questions including:
 - Why is this culturally innovative?
@@ -146,3 +202,5 @@ Shot Marilyns (1964) https://en.wikipedia.org/wiki/Shot_Marilyns
 Original style transfer paper (2015) https://arxiv.org/abs/1508.06576
 
 A tutorial on how to style transfer https://www.pyimagesearch.com/2018/08/27/neural-style-transfer-with-opencv/
+
+Source for Getty Images https://blogs.getty.edu/iris/getty-artworks-recreated-with-household-items-by-creative-geniuses-the-world-over/
