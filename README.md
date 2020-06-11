@@ -1,4 +1,4 @@
-# Project Title
+# Exploring Style Transfer
 
 DSC160 Data Science and the Arts - Final Project - Generative Arts - Spring 2020
 
@@ -59,6 +59,8 @@ Code: https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/co
 Will need tensorflow installed.
 
 For the Marilyn section, we load the subject and styled images then input them into Tensorflow's fast style transfer to receive our transferred results. We also built a VGG19 model from scratch, and trained on the Spiderverse style. We also print out the output for every training epoch.
+
+The Getty Images section used the same fast style transfer code to achieve its results.
 
 
 ## Results
