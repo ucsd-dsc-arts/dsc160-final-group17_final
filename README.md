@@ -50,12 +50,6 @@ https://blogs.getty.edu/iris/getty-artworks-recreated-with-household-items-by-cr
 
 For the Getty Images Challenge, we used the same methodology as above.
 
-In the final submission, this section will describe both the data you use for this project and any pre-existing models/neural nets. For each you should provide the name, a textual description, and a link. If there is a paper (for neural net) link that as well.
-- Such and such Neural Net. The short description of this neural net. 
-  - [link to code]().
-  - [Title of Paper with Link](). 
-- Training data. Short description of training data including bibliographic info. [link to data]().
-
 ## Code
 
 (20 points)
@@ -66,14 +60,6 @@ Will need tensorflow installed.
 
 For the Marilyn section, we load the subject and styled images then input them into Tensorflow's fast style transfer to receive our transferred results. We also built a VGG19 model from scratch, and trained on the Spiderverse style. We also print out the output for every training epoch.
 
-This section will link to the various code for your project (stored within this repository). Your code should be executable on datahub, should we choose to replicate your result. This includes code for: 
-
-- code for data acquisition/scraping
-- code for preprocessing
-- training code (if appropriate)
-- generative methods
-
-Link each of these items to your .ipynb or .py files within this seection, and provide a brief explanation of what the code does. Reading this section we should have a sense of how to run your code.
 
 ## Results
 
@@ -149,11 +135,6 @@ Male Harp Player of the Early Spedos Type combination:
 
 ![alt text](https://github.com/ucsd-dsc-arts/dsc160-final-group17_final/blob/master/images/combined_4.png)
 
-This section should summarize your results and will embed links to documentation to significant outputs. This should document both process and show artistic results. This can include figures, sound files, videos, bitmaps, as appropriate to your generative art idea. Each result should include a brief textual description, and all should be listed below: 
-
-- image files (`.jpg`, `.png` or whatever else is appropriate)
-- audio files (`.wav`, `.mp3`)
-- written text as `.pdf`
 
 ## Discussion
 
@@ -169,12 +150,6 @@ For the Getty Image Challenge, for the most part, the combinations of the recrea
 
 Ultimately, generative art in these two manners were both very successful in their own ways, and show the incredible potential that style transfer has to create great and hitherto unimagined art in the future.
 
-The subsequent paragraphs could address questions including:
-- Why is this culturally innovative?
-- How does your generative computational approach differ from traditional art/music/cultural production? 
-- How do your results relate to broader social, cultural, economic political, etc., issues? 
-- What are the ethical concerns for this form of generative art? 
-- In what future directions could you expand this work?
 
 ## Team Roles
 
@@ -189,11 +164,6 @@ Thomas Evans-Barton: Project idea creation, creation of Getty modeling network, 
 ## Technical Notes and Dependencies
 
 The code will require Tensorflow to be installed.
-
-Any implementation details or notes we need to repeat your work. 
-- Additional libraries you are using for this project
-- Does this code require other pip packages, software, etc?
-- Does this code need to run on some other (non-datahub) platform? (CoLab, etc.)
 
 ## Reference
 
